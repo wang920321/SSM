@@ -1,0 +1,31 @@
+package com.yb2g.ssm.util.converter;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.springframework.core.convert.converter.Converter;
+
+/**
+ * 
+ * @ClassName: CustomDateConverter
+ * @Description: 日期转换
+ * @author: Administrator
+ * @date: 2017年11月28日 下午4:58:46
+ */
+public class CustomDateConverter implements Converter<String, Date> {
+
+	@Override
+	public Date convert(String source) {
+
+		try {
+			// 进行日期转换
+			return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(source);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+}
