@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: ssm_shiro_demo
-Bundle-SymbolicName: ssm_shiro_demo
-Bundle-Version: 1.0.0.qualifier
